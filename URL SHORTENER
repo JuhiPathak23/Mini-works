@@ -1,0 +1,6 @@
+pip install pyshorteners
+import pyshorteners
+longurl=input("Enter the URL you wish to shorten:")
+tbitly=pyshorteners.Shortener(api_key='d3daa7fc6551145c2e3dc98bf5815208aaf7846a')
+short=tbitly.bitly.short(longurl)
+print("Your shortened URL is:"+short)
